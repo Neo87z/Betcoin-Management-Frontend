@@ -91,7 +91,7 @@ export default class FormSubmission extends React.Component {
       Team2: "-",
       BetID: "-",
       Team1Logo: this.state.Password,
-      Team2Logo: "-",
+      Team2Logo: this.state.Phone,
       Team1Score: "-",
       Team2Score: "-"
 
@@ -151,9 +151,16 @@ export default class FormSubmission extends React.Component {
                     <div className="flex flex-wrap -mx-3 mb-4">
                       <div className="w-full px-3">
                         <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="email">Bet Event Image URL <span className="text-red-600">*</span></label>
-                        <input id="email" type="text" value={this.state.Password}   onChange={this.onChangePassword} className="form-input w-full text-gray-300" placeholder="Event URL" required />
+                        <input id="email" type="text" value={this.state.Password} onChange={this.onChangePassword} className="form-input w-full text-gray-300" placeholder="Event URL" required />
                       </div>
                     </div>
+                    <div className="flex flex-wrap -mx-3 mb-4">
+                      <div className="w-full px-3">
+                        <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="email">Game URL Google <span className="text-red-600">*</span></label>
+                        <input id="email" type="text" value={this.state.Phone} onChange={this.onChangePhone} className="form-input w-full text-gray-300" placeholder="Google Event URL" required />
+                      </div>
+                    </div>
+
 
 
                     <div className="flex flex-wrap -mx-3 mt-6">
