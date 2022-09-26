@@ -88,7 +88,7 @@ export default class FormSubmission extends React.Component {
       BetName: this.state.Full_Name,
       ImageURL: this.state.Email,
       Team1: "-",
-      Team2: "-",
+      Team2: "Active",
       BetID: "-",
       Team1Logo: this.state.Password,
       Team2Logo: this.state.Phone,
